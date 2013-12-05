@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>randomColor Demo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="media/css/kickstart.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="media/style.css" media="all" />
+</head>
+<body>
+    <div class="callout clearfix">
+        <div class="grid">
+            <h1 class="bigTitle">
+                Random Color jQuery Plugins</h1>
+            <a class="button green large" href="https://github.com/bhaumikpatel/RandomColor"><i class="icon-download-alt"></i>Download (Github)</a>
+        </div>
+    </div>
+    <div class="grid">
+        <h3>
+            Getting Started</h3>
+        <ul class="tabs">
+            <li><a href="#instructions">Instructions</a></li>
+        </ul>
+        <div id="instructions" class="tab-content">
+            <div class="col_8">
+                <h4>
+                    <i class="icon-wrench"></i>Setup</h4>
+                <ol>
+                    <li><a href="https://github.com/bhaumikpatel/RandomColor">Download randomColor</a></li>
+                    <li>Include jQuery and randomColor
+                        <pre>
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/randomColor.js&quot;&gt;&lt;/script&gt; &lt;!-- randomColor --&gt;
+</pre>
+                    </li>
+                    <li>Call the function
+                        <pre>$('h2').randomColor({
+    random: true,
+    colors: [&quot;#216FF1&quot;, &quot;#D5412D&quot;, &quot;#FFC407&quot;, &quot;#009856&quot;],
+    css: {
+        'color': '#86C9EF',
+        fontStyle: 'oblique',
+        'fontSize': '30px'
+    },
+    complete: function () { alert('Done!') }
+});</pre>
+                    </li>
+                </ol>
+            </div>
+            <div class="col_1">
+            </div>
+            <div class="col_3">
+                <a class="button orange" href="Javascript:void(0)" onclick="myRefresh();"><i class="icon-refresh">
+                </i>&nbsp;Refresh</a>
+                <h1 class="mc-title">
+                    G o o g l e</h1>
+            </div>
+        </div>
+        <h3>
+            Documentation</h3>
+        <ul class="tabs">
+            <li><a href="#availableOptions">Available options</a></li>
+            <li><a href="#callbacks">Callbacks</a></li>
+        </ul>
+        <div id="availableOptions" class="tab-content">
+            <div class="col_12">
+                <table border="0" cellpadding="0" cellspacing="0" class="striped">
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            Description
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            css
+                        </td>
+                        <td>
+                            Customizable CSS write property.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            colors
+                        </td>
+                        <td>
+                            Custom colors collection array.<code>colors: ["#216FF1", "#D5412D", "#FFC407", "#009856"]</code>
+                            <br />
+                            <strong>Array; Default value: null</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            random
+                        </td>
+                        <td>
+                            Can not change color random.
+                            <br />
+                            <strong>Boolean; Default value: true</strong>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="callbacks" class="tab-content">
+            <div class="col_12">
+                <table border="0" cellpadding="0" cellspacing="0" class="striped">
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            Description
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            complete
+                        </td>
+                        <td>
+                            Called after complete process.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h3>
+            Demo</h3>
+        <ul class="tabs">
+            <li><a href="#demo">Demo</a></li>
+        </ul>
+        <div id="demo" class="tab-content">
+            <div>
+                <h6>
+                    Simple Demo <a class="button small" href="Javascript:void(0)" onclick="mySimpleDemo();">
+                        <i class="icon-refresh"></i>&nbsp;Refresh</a>
+                </h6>
+                <div>
+                    <div class="col_6">
+                        <h5 class="simpleDemo">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+                    </div>
+                    <div class="col_6">
+                        <pre>$('.simpleDemo').randomColor();</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+            <div>
+                <h6>
+                    Custom Css Demo <a class="button small" href="Javascript:void(0)" onclick="myCustomCssDemo();">
+                        <i class="icon-refresh"></i>&nbsp;Click Here</a>
+                </h6>
+                <div>
+                    <div class="col_6">
+                        <h5 class="customCssDemo">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+                    </div>
+                    <div class="col_6">
+                        <pre>$('.customCssDemo').randomColor({
+    random: false,
+    css: {
+        'color': '#D5412D',
+        'text-decoration': 'underline'
+    },
+    complete: function () { alert('Done!') }
+});</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+            <div>
+                <h6>
+                    Custom Color Demo <a class="button small" href="Javascript:void(0)" onclick="myColorDemo();">
+                        <i class="icon-refresh"></i>&nbsp;Click Here</a>
+                </h6>
+                <div>
+                    <div class="col_6">
+                        <h5 class="colorDemo">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+                    </div>
+                    <div class="col_6">
+                        <pre>$('.colorDemo').randomColor({
+    colors: [&quot;#216FF1&quot;, &quot;#D5412D&quot;, &quot;#FFC407&quot;, &quot;#009856&quot;]
+});</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Javascript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="media/js/kickstart.js"></script>
+    <script type="text/javascript" src="randomColor.js"></script>
+    <script type="text/javascript">
+        function myRefresh() {
+            $('.mc-title').randomColor({
+                random: true,
+                colors: ["#216FF1", "#D5412D", "#FFC407", "#009856"],
+                css: {
+                    'color': '#86C9EF'
+                },
+                complete: function () { /*alert('Done!')*/ }
+            });
+        }
+        function mySimpleDemo() {
+            $('.simpleDemo').randomColor();
+        }
+        function myCustomCssDemo() {
+            $('.customCssDemo').randomColor({
+                random: false,
+                css: {
+                    'color': '#D5412D',
+                    'text-decoration': 'underline'
+                },
+                complete: function () { alert('Done!') }
+            });
+        }
+        function myColorDemo() {
+            $('.colorDemo').randomColor({
+                colors: ["#216FF1", "#D5412D", "#FFC407", "#009856"]
+            });
+        }
+
+        function myBigTitle() {
+            $('.bigTitle,h3').randomColor({
+                colors: ["#216FF1", "#D5412D", "#FFC407", "#009856", "#ea4c89", "#f3ce13", "#FFF", "#76b900"]
+            });
+        }
+
+
+        $(window).load(function () { myRefresh(); var init = setInterval(myBigTitle, 900); });
+    </script>
+</body>
+</html>
