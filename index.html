@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Random Color : Random Color Jquery Plugin" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Random Color</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/bhaumikpatel/RandomColor">View on GitHub</a>
+
+          <h1 id="project_title">Random Color</h1>
+          <h2 id="project_tagline">Random Color Jquery Plugin</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/bhaumikpatel/RandomColor/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/bhaumikpatel/RandomColor/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="random-color-jquery-plugin" class="anchor" href="#random-color-jquery-plugin"><span class="octicon octicon-link"></span></a>Random Color jQuery Plugin</h1>
+
+<p>Random color add any text in website. Lightweight jquery plugin uncompressed 3kb.</p>
+
+<h2>
+<a name="" class="anchor" href="#"><span class="octicon octicon-link"></span></a><img src="https://lh6.googleusercontent.com/-jcPg4psx5Yo/UqC9fNOn8GI/AAAAAAAACfk/TYtYOLsfsd8/w679-h98-no/randomColorJquery.gif" alt="Random color" title="Random color">
+</h2>
+
+<h2>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<ul>
+<li><a href="http://jsfiddle.net/lesson8/NgtcR/show/">jsFiddle</a></li>
+</ul><h2>
+<a name="basic-usage" class="anchor" href="#basic-usage"><span class="octicon octicon-link"></span></a>Basic Usage</h2>
+
+<p>Include jQuery and randomColor into your document's <code>&lt;head&gt;</code> </p>
+
+<pre><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/randomColor.js"&gt;&lt;/script&gt; &lt;!-- randomColor --&gt;
+</code></pre>
+
+<p>Call the function as follows:</p>
+
+<pre><code>$('h2').randomColor({
+    random: true,
+    colors: ["#216FF1", "#D5412D", "#FFC407", "#009856"],
+    css: {
+        'color': '#86C9EF',
+        fontStyle: 'oblique',
+        'fontSize': '30px'
+    },
+    complete: function () { alert('Done!') }
+});
+</code></pre>
+
+<h4>
+<a name="-documentation" class="anchor" href="#-documentation"><span class="octicon octicon-link"></span></a><i></i> Documentation</h4>
+
+<p>Available options</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<thead><tr>
+<th>
+Name
+</th>
+<th>
+Description
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+css
+</td>
+<td>
+Customizable CSS write property.
+</td>
+</tr>
+<tr>
+<td>
+colors
+</td>
+<td>
+Custom colors collection array.<code>colors: ["#216FF1", "#D5412D", "#FFC407", "#009856"]</code>
+<br><strong>Array; Default value: null</strong>
+</td>
+</tr>
+<tr>
+<td>
+random
+</td>
+<td>
+If you can not color change randomly then put false.
+<br><strong>Boolean; Default value: true</strong>
+</td>
+</tr>
+</tbody>
+</table><p>Callbacks</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<thead><tr>
+<th>
+Name
+</th>
+<th>
+Description
+</th>
+</tr></thead>
+<tbody><tr>
+<td>
+complete
+</td>
+<td>
+Called after complete process.
+</td>
+</tr></tbody>
+</table>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Random Color maintained by <a href="https://github.com/bhaumikpatel">bhaumikpatel</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-46102911-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
